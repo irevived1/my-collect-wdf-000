@@ -2,7 +2,7 @@ def my_collect ( ar )
 	rnt = []
 	i = 0
 	while i < ar.length
-		rnt << ar[i].split(" ").first.upcase
+		rnt << yield(ar[i])
 		i += 1
 	end
 	rnt
